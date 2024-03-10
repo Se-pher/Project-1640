@@ -72,6 +72,7 @@ export const button = styled.button`
     background-color: #F6793E;
     color: White;
     border: none;
+    cursor: pointer;
 `
 
 export const ForgotPassword = styled.div`
@@ -144,4 +145,10 @@ export const SignUpLink = styled.div`
     color: #F6793E;
     text-decoration: underline;
   }
+`;
+
+export const Error = styled.div`
+  color: red; /* Set color to red */
+  font-size: 14px; /* Set font size */
+  margin-top: 5px; /* Add margin */
 `;
