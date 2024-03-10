@@ -19,7 +19,7 @@ export const Image = styled.img`
   max-height: 100%;
 `;
 
-export const LoginContainer = styled.div`
+export const RegisterContainer = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -48,15 +48,13 @@ export const Input = styled.input`
   width: 350px;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
-
   &:hover {
     box-shadow: 0;
-    border-color: #F6793E;
+    border-color: #f6793e;
   }
-
   &:focus {
     outline: none;
-    border-color: #F6793E;
+    border-color: #f6793e;
   }
 `;
 
@@ -66,20 +64,12 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const button = styled.button`
-   width: 200px;
-    padding: 0.5rem;
-    border-radius: 13px;
-    background-color: #F6793E;
-    color: White;
-    border: none;
-`
-
-export const ForgotPassword = styled.div`
-  color: #F6793E;
-  margin-left: 225px;
-  &:hover{
-    color: #F6793E;
-  }
+  width: 200px;
+  padding: 0.5rem;
+  border-radius: 13px;
+  background-color: #f6793e;
+  color: White;
+  border: none;
 `;
 
 export const Divider = styled.div`
@@ -87,7 +77,6 @@ export const Divider = styled.div`
   align-items: center;
   margin: 1rem 0;
   width: 350px;
-
   &::before,
   &::after {
     content: "";
@@ -95,11 +84,9 @@ export const Divider = styled.div`
     height: 1px;
     background-color: black;
   }
-
   &::before {
     margin-right: 1rem;
   }
-
   &::after {
     margin-left: 1rem;
   }
