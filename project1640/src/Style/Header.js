@@ -1,4 +1,3 @@
-// File header.js
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -7,8 +6,20 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #333;
-  color: #fff;
+  color: #black;
+`;
+
+export const LeftContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 3rem;
+`;
+
+export const RightContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
 `;
 
 export const Logo = styled.img`
@@ -20,25 +31,23 @@ export const Title = styled.h2`
   margin-left: 10px;
 `;
 
-export const Navigation = styled.nav`
+export const Navigation = styled.div`
   display: flex;
-`;
-
-export const NavLink = styled(Link)`
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
+  gap: 10px;
+  a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+  }
 `;
 
 export const SearchBar = styled.input`
   padding: 0.5rem;
-  border-radius: 5px;
-  border: none;
-  margin: 0 10px;
+  border-radius: 10px;
+  margin-left: 10px;
 `;
 
 export const LoginLink = styled(Link)`
-  color: #fff;
   text-decoration: none;
   margin-left: 10px;
 `;
