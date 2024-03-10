@@ -136,7 +136,7 @@ export const SignUpLink = styled.div`
   margin-top: 10px;
 
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #000000;
     transition: color 0.3s;
   }
