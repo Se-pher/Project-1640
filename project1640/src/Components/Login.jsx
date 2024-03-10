@@ -1,7 +1,10 @@
 import React from "react";
 import * as s from "../Style/Login";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Img from "../Image/Login.png";
+import GoogleLogo from "../Image/google.png";
+import FBLogo from "../Image/facebook.png";
+import GithubLogo from "../Image/github.png";
 
 const Login = () => {
   return (
@@ -28,6 +31,20 @@ const Login = () => {
         <s.Divider>
           <s.DividerText>Or Continue with</s.DividerText>
         </s.Divider>
+        <s.SocialButtonWrapper>
+          <a href="/auth/google">
+            <s.SocialLoginImg src={GoogleLogo} alt="Google Logo" />
+          </a>
+          <a href="/auth/facebook">
+            <s.SocialLoginImg src={FBLogo} alt="FB Logo" />
+          </a>
+          <a href="/auth/github">
+            <s.SocialLoginImg src={GithubLogo} alt="Github Logo" />
+          </a>
+        </s.SocialButtonWrapper>
+        <s.SignUpLink>
+          Don't have an account? <Link to="/register">Sign up here</Link>
+        </s.SignUpLink>
       </s.LoginContainer>
     </s.Container>
   );
