@@ -75,10 +75,18 @@ export const button = styled.button`
 `
 
 export const ForgotPassword = styled.div`
-  color: #F6793E;
   margin-left: 225px;
-  &:hover{
+  text-decoration: underline;
+
+  a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+  }
+
+  a:hover {
     color: #F6793E;
+    text-decoration: underline;
   }
 `;
 
@@ -108,4 +116,32 @@ export const Divider = styled.div`
 export const DividerText = styled.span`
   font-size: 0.9rem;
   color: black;
+`;
+
+export const SocialButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+`;
+
+export const SocialLoginImg = styled.img`
+  width: 55px;
+  height: 55px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+`;
+
+export const SignUpLink = styled.div`
+  margin-top: 10px;
+
+  a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #F6793E;
+    text-decoration: underline;
+  }
 `;

@@ -96,3 +96,31 @@ export const DividerText = styled.span`
   font-size: 0.9rem;
   color: black;
 `;
+
+export const SocialButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+`;
+
+export const SocialLoginImg = styled.img`
+  width: 55px;
+  height: 55px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+`;
+
+export const RegisterLink = styled.div`
+  margin-top: 10px;
+
+  a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #F6793E;
+    text-decoration: underline;
+  }
+`;
