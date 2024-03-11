@@ -5,6 +5,7 @@ import Home from "./Components/LandingPage";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
 import Header from "./Components/Header";
+import Admin from "./Components/Admin/Admin"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Header><Home /></Header>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/Admin" element={<Admin />} />
       </Routes>
     </Router>
   );
